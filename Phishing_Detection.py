@@ -224,4 +224,3 @@ pred_knn = knn.predict(test)
 res = pd.DataFrame(pred_knn) #preditcions are nothing but the final predictions of your model on input features of your new unseen test data
 res.index = test.index # its important for comparison. Here "test_new" is your new test dataset
 res.columns = ["prediction"]
-res.to_csv("D:/ML/Dphi_Tech/prediction_results13.csv")
